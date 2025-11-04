@@ -38,11 +38,11 @@ export default function App() {
     //   features: ["مونتاج احترافي", "تأثيرات بصرية", "إخراج سينمائي"]
     // },
     {
-      name: "After Effects",
-      text: "أبدع في الموشن جرافيك والانيميشن وإضافة المؤثرات البصرية المذهلة",
-      img: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg",
-      gradient: "from-indigo-400 to-purple-400",
-      features: ["موشن جرافيك", "انيميشن", "مؤثرات بصرية"]
+       name: "Adobe",
+    text: "أبدع في الموشن جرافيك والانيميشن وإضافة المؤثرات البصرية المذهلة.",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn2ln4VI6M5pDI3x7faug2BPrMwixYRFmT7g&s",
+    gradient: "from-indigo-400 to-purple-400",
+    features: ["موشن جرافيك", "انيميشن", "مؤثرات بصرية"],
     },
   ];
 
@@ -436,8 +436,8 @@ export default function App() {
                   {[
                     { program: "Adobe Photoshop", hours: "24 ساعة", icon: "🎨" },
                     { program: "Adobe Illustrator", hours: "18 ساعة", icon: "✏️" },
-                    { program: "Adobe Premiere Pro", hours: "18 ساعة", icon: "🎬" },
-                    { program: "Adobe After Effects", hours: "12 ساعة", icon: "✨" },
+                    { program: "Adobe InDesign", hours: "20 ساعة", icon: "📄" },
+                    // { program: "Adobe After Effects", hours: "12 ساعة", icon: "✨" },
                   ].map((item, i) => (
                     <motion.div
                       key={i}
@@ -485,16 +485,7 @@ export default function App() {
               className="space-y-6"
             >
               <div className="bg-white rounded-3xl p-8 shadow-2xl">
-                <div className="text-center mb-6">
-                  <div className="inline-block bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                    عرض لفترة محدودة 🔥
-                  </div>
-                  <div className="flex items-center justify-center gap-4 mb-4">
-                    <div className="text-gray-400 line-through text-2xl">₪1500</div>
-                    <div className="text-5xl font-bold text-blue-600">₪999</div>
-                  </div>
-                  <div className="text-green-600 font-semibold">وفر ₪501 الآن!</div>
-                </div>
+               
 
                 <div className="space-y-4 mb-8">
                   {[
@@ -538,18 +529,7 @@ export default function App() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-amber-400 to-orange-500 rounded-3xl p-6 text-white">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">🎁</span>
-                  <h4 className="text-xl font-bold">مكافأة خاصة</h4>
-                </div>
-                <p className="text-amber-50 mb-4">
-                  احصل على كورس "أساسيات الموشن جرافيك" مجاناً بقيمة ₪300 عند التسجيل اليوم!
-                </p>
-                <div className="bg-white/20 rounded-xl p-3 text-sm">
-                  العرض صالح حتى نهاية الأسبوع فقط
-                </div>
-              </div>
+             
             </motion.div>
           </div>
         </div>
@@ -596,10 +576,7 @@ export default function App() {
                   {[
                     { program: "Adobe Photoshop Advanced", hours: "36 ساعة", icon: "🎨", level: "متقدم" },
                     { program: "Adobe Illustrator Pro", hours: "32 ساعة", icon: "✏️", level: "احترافي" },
-                    { program: "Adobe Premiere Pro", hours: "28 ساعة", icon: "🎬", level: "متقدم" },
-                    { program: "Adobe After Effects Pro", hours: "32 ساعة", icon: "✨", level: "احترافي" },
                     { program: "Adobe InDesign", hours: "20 ساعة", icon: "📄", level: "متقدم" },
-                    { program: "Adobe XD / Figma", hours: "16 ساعة", icon: "📱", level: "أساسي" },
                   ].map((item, i) => (
                     <motion.div
                       key={i}
@@ -642,30 +619,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 backdrop-blur-md rounded-3xl p-6 border border-yellow-400/30">
-                <h4 className="font-bold text-yellow-300 mb-3 flex items-center gap-2">
-                  <span className="text-2xl">🏅</span>
-                  مكافآت إضافية للميجا جرافيك
-                </h4>
-                <ul className="space-y-2 text-sm text-yellow-100">
-                  <li className="flex items-center gap-2">
-                    <span>✓</span>
-                    <span>ورشة عمل مباشرة مع محترفين في المجال</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span>✓</span>
-                    <span>بناء Portfolio احترافي كامل</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span>✓</span>
-                    <span>دعم في الحصول على فرص عمل وتدريب</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span>✓</span>
-                    <span>شهادتين معتمدتين (أساسي + متقدم)</span>
-                  </li>
-                </ul>
-              </div>
+              
             </motion.div>
 
             {/* Right Column - Premium Pricing & CTA */}
@@ -675,24 +629,10 @@ export default function App() {
               className="space-y-6"
             >
               <div className="bg-white rounded-3xl p-8 shadow-2xl border-4 border-yellow-400">
-                <div className="text-center mb-6">
-                  <div className="inline-block bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                    عرض حصري VIP 👑
-                  </div>
-                  <div className="flex items-center justify-center gap-4 mb-4">
-                    <div className="text-gray-400 line-through text-2xl">₪3500</div>
-                    <div className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">₪2499</div>
-                  </div>
-                  <div className="text-green-600 font-semibold text-lg">وفر ₪1001 - خصم 29%!</div>
-                  <div className="mt-3 text-sm text-gray-600">
-                    أو قسط على <span className="font-bold text-purple-600">6 أقساط شهرية</span> بدون فوائد
-                  </div>
-                </div>
-
+              
                 <div className="space-y-3 mb-8">
                   {[
-                    "شهادتين معتمدتين (أساسي + متقدم)",
-                    "6 جلسات استشارية فردية",
+                    "شهادة معتمدة من أكاديمية ELITE",
                     "دعم فني مدى الحياة",
                     "تسجيلات جميع المحاضرات",
                     "مجموعة VIP على واتساب",
@@ -700,7 +640,6 @@ export default function App() {
                     "ورش عمل حصرية شهرية",
                     "بناء Portfolio احترافي كامل",
                     "دعم في الحصول على فرص عمل",
-                    "وصول لمكتبة موارد ضخمة",
                   ].map((feature, i) => (
                     <div key={i} className="flex items-center gap-3 text-gray-700 text-sm">
                       <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -731,7 +670,7 @@ export default function App() {
                 </div>
 
                 <p className="text-center text-gray-500 text-sm mt-6">
-                  باقي 8 مقاعد فقط • سجل الآن لضمان مكانك ⚡
+                      • سجل الآن لضمان مكانك ⚡
                 </p>
               </div>
 
@@ -748,14 +687,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-red-500 to-pink-600 rounded-3xl p-6 text-white text-center">
-                <div className="text-2xl mb-2">🔥 عرض محدود جداً</div>
-                <div className="text-lg font-bold mb-2">سجل الآن واحصل على:</div>
-                <div className="bg-white/20 rounded-xl p-4">
-                  <p className="font-semibold">كورس Cinema 4D الكامل</p>
-                  <p className="text-sm text-red-100">بقيمة ₪800 - مجاناً تماماً!</p>
-                </div>
-              </div>
+             
             </motion.div>
           </div>
         </div>
@@ -876,11 +808,11 @@ export default function App() {
                 لا تضيع الفرصة! الأماكن محدودة والتسجيل مفتوح لفترة محدودة فقط
               </p>
               
-              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 mb-8">
+              {/* <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6 mb-8">
                 <div className="grid md:grid-cols-3 gap-4 text-center">
                   <div>
-                    <div className="text-3xl font-bold text-blue-600 mb-1">₪999</div>
-                    <div className="text-gray-600 text-sm">بدلاً من ₪1500</div>
+                    <div className="text-3xl font-bold text-blue-600 mb-1">999</div>
+                    <div className="text-gray-600 text-sm">بدلاً من 1500</div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-blue-600 mb-1">33%</div>
@@ -891,7 +823,7 @@ export default function App() {
                     <div className="text-gray-600 text-sm">ساعة تدريبية</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.a
